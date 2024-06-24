@@ -1,0 +1,66 @@
+name: Square Hack Issue
+description: Square Hack Issue Template
+title: "<title>"
+body:
+- type: textarea
+  attributes:
+    label: Context
+    description: "A concise description of the problem with any relevant additional references."
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Current Behavior
+    description: "A concise description of what you are experiencing."
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Screenshots (Current)
+    description: "Screenshots or a recording of the current problem or feature area. *required for front-end issues.*"
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: "A concise description of what you expected to happen."
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Screenshots (Expected)
+    description: "Screenshots or a recording of the expected solution if any. *optional*"
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: "How do you trigger this bug? Please walk us through it step by step. this field is only required for bugs." 
+    value: |
+      Steps to reproduce the behavior - 
+        1. In this environment...
+        1. With this config...
+        1. Run '...'
+        1. See error... -->
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Environment
+    description: "Environment the bug was reproduced on, this field is only required for bugs."
+    value: |
+          - **OS**:
+          - **Node**:
+          - **npm**:
+          - **Browser**:
+  validations:
+    required: false
+- type: dropdown
+  id: browsers
+  attributes:
+    label: "Can the scope of the problem be broken down to smaller pieces?"
+    description: "Please consider if this issue is a small issue that describes a single a problem or flag this as an Epic so a series of issues could be referenced to it."
+    multiple: false
+    options:
+    - This is a small issue
+    - This is an Epic

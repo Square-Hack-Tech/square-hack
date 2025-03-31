@@ -1,0 +1,67 @@
+.hero {
+    display: flex;
+    justify-content: start; 
+    height:fit-content;
+    margin: 150px 0px 50px 0px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 100px;
+    background: #fff;
+  }
+  
+  .hero-content {
+    max-width: 60%;
+  }
+  
+  .badge {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #4a90e2, #d4418e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(to right, #4a90e2, #d4418e);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: auto;
+      margin-top: 100px;
+      padding: 40px 20px;
+    }
+  
+    .gradient-text {
+      font-size: 2rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,11 +1,27 @@
-import './App.css'
+import React, { useState } from 'react'
+import { BrowserRouter as Router, Route, Routes, Link, RouterProvider } from 'react-router-dom'
+import styled, { ThemeProvider } from 'styled-components'
+import GlobalStyle from './styles/GlobalStyle'
+import { lightTheme } from './styles/themes'
+import { useTheme } from './context/ThemeContext'
+import router from './routes/router'
+import Navbar from './components/navBar'
 
-function App () {
+const App = () => {
+  const { themeColor } = useTheme()
+
   return (
-    <>
-      <img src='/logo.svg' className='App-logo' alt='logo' height={100} />
-      <h1>Square Hack</h1>
-    </>
+    <ThemeProvider theme={themeColor || lightTheme}>
+      <GlobalStyle />
+      <Router>
+        <Navbar />
+        <Routes>
+          {router.map((ele, i) => {
+            return <Route key={i} {...ele} />
+          })}
+        </Routes>
+      </Router>
+    </ThemeProvider>
   )
 }
 

@@ -1,6 +1,22 @@
+/* src/index.css */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-text-size-adjust: 100%;
+  --bg-color: white;
+  --text-color: black;
 }
+
+.dark {
+  --bg-color: black;
+  --text-color: white;
+}
+
+.pinklight {
+  --bg-color: pink;
+  --text-color: purple;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Add any other global styles here */

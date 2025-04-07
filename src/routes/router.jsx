@@ -28,7 +28,7 @@ const router = [
     element: <Team />,
     title: 'Teams'
     // icon: <DynamicFeedIcon />
-  },,
+  },
   {
     path: 'contact',
     element: <Contact />,

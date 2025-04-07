@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 import { useTheme } from '../../context/ThemeContext'
 import { Link } from 'react-router-dom'
-import logo from '../../../public/logo.svg'  // Ensure this image has a transparent background
+import logo from '../../../public/logo.svg' // Ensure this image has a transparent background
 
 const Navbar = () => {
   const { themeMode, toggleTheme } = useTheme()
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavLeft>
-      <Logo src={logo} alt="Logo" />
+        <Logo src={logo} alt='Logo' />
       </NavLeft>
       {/* <Divider themeMode={themeMode} /> */}
       <NavCenter>
@@ -128,23 +128,6 @@ const NavLink = styled(Link)`
   @media (max-width: 768px) {
     margin-right: 0;
     margin-bottom: 1rem;
-  }
-`
-
-const Divider = styled.div`
-  height: 2rem;
-  width: 1px;
-  background: ${({ theme, themeMode }) => themeMode === 'light' ? theme.lightDividerBg : theme.darkDividerBg};
-  border-radius: ${({ theme, themeMode }) => themeMode === 'light' ? theme.lightDividerRadius : theme.darkDividerRadius};
-  border-width: ${({ theme, themeMode }) => themeMode === 'light' ? theme.lightDividerWidth : theme.darkDividerWidth};
-  border-color: ${({ theme, themeMode }) => themeMode === 'light' ? theme.lightDividerColor : theme.darkDividerColor};
-  border-style: solid;
-  margin: 0 1rem;
-
-  @media (max-width: 768px) {
-    height: 1px;
-    width: 100%;
-    margin: 1rem 0;
   }
 `
 

@@ -6,6 +6,7 @@ import { lightTheme } from './styles/themes'
 import { useTheme } from './context/ThemeContext'
 import router from './routes/router'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
   const { themeColor } = useTheme()
@@ -15,14 +16,13 @@ const App = () => {
       <GlobalStyle />
       <Router>
         <Navbar />
-        {/* <HeroSection /> */}
         <Routes>
           {router.map((ele, i) => {
             return <Route key={i} {...ele} />
           })}
         </Routes>
       </Router>
-      {/* <ListSection /> */}
+      <Footer />
     </ThemeProvider>
   )
 }

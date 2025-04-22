@@ -5,7 +5,7 @@ import GlobalStyle from './styles/GlobalStyle'
 import { lightTheme } from './styles/themes'
 import { useTheme } from './context/ThemeContext'
 import router from './routes/router'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 
 const App = () => {
   const { themeColor } = useTheme()
@@ -14,7 +14,7 @@ const App = () => {
     <ThemeProvider theme={themeColor || lightTheme}>
       <GlobalStyle />
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           {router.map((ele, i) => {
             return <Route key={i} {...ele} />

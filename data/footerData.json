@@ -1,0 +1,73 @@
+{
+  "company": {
+    "name": "OpenXcell",
+    "logo": "/images/logo.png",
+    "locations": [
+      {
+        "flag": "/images/usa-flag.svg",
+        "address": "304 S. Jones Blvd #520 Las Vegas, NV 89107"
+      },
+      {
+        "flag": "/images/india-flag.svg",
+        "address": "203/204 Baleshwar Avenue, Bodakdev, Ahmedabad"
+      }
+    ],
+    "contact": {
+      "phone": "+1 888 777 4629",
+      "email": "sales@squarehack.com"
+    },
+    "copyright": "Copyright © 2025 by SquareHack"
+  },
+  "links": {
+    "AI SERVICES": [
+      "Artificial Intelligence",
+      "Data Engineering",
+      "Generative AI",
+      "DevOps",
+      "Development Services"
+    ],
+    "INDUSTRY": [
+      "Healthcare",
+      "Fintech",
+      "Logistics",
+      "Retail",
+      "Ecommerce"
+    ],
+    "INSIGHTS": [
+      "AI Excellence",
+      "AI Handbook",
+      "AI Solutions",
+      "Case Studies"
+    ],
+    "ABOUT US": [
+      "About",
+      "Career",
+      "Partners & Ecosystem",
+      "Privacy Policy",
+      "Security Policy",
+      "Our Team"
+    ]
+  },
+  "socialIcons": [
+    {
+      "icon": "fab fa-facebook",
+      "link": "./facebook-icon.svg"
+    },
+    {
+      "icon": "fab fa-linkedin",
+      "link": "./linkedin-icon.svg"
+    },
+    {
+      "icon": "fab fa-x-twitter",
+      "link": "./twitter-icon.svg"
+    },
+    {
+      "icon": "fab fa-medium",
+      "link": "./goodfirms-icon.svg"
+    },
+    {
+      "icon": "fab fa-youtube",
+      "link": "./youtube-icon.svg"
+    }
+  ]
+}

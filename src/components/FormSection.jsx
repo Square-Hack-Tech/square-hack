@@ -19,7 +19,7 @@ const FormSection = () => {
               <label>Last Name*</label>
               <input type="text"  required />
             </div>
-          </div>
+          </div> 
 
           <div className="form-row">
             <div className="form-group">

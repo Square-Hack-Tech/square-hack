@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "quote": "Their team delivered exceptional results that exceeded our expectations. The quality of work and attention to detail was impressive.",
+    "author": "John Smith",
+    "position": "CEO, TechCorp",
+    "rating": 3.5,
+    "image": "/author.jpeg"
+  },
+  {
+    "id": 2,
+    "quote": "We've been working with them for years and they consistently deliver innovative solutions that drive our business forward.",
+    "author": "Sarah Johnson",
+    "position": "CTO, InnovateX",
+    "rating": 5,
+    "image": "/author-2.jpeg"
+  },
+  {
+    "id": 3,
+    "quote": "The development team was responsive, professional, and delivered our project ahead of schedule. Highly recommended!",
+    "author": "Michael Brown",
+    "position": "Product Manager, DigiSolutions",
+    "rating": 3,
+    "image": "/author-1.jpeg"
+  }
+]

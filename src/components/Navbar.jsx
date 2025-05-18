@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext';
-import logo from '../../public/logo.svg';
-import '../styles/Navbar.css';
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { useTheme } from '../context/ThemeContext'
+import logo from '../../public/logo.svg'
+import '../styles/Navbar.css'
 
 const Navbar = () => {
-  const { themeMode, toggleTheme } = useTheme();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const { themeMode, toggleTheme } = useTheme()
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setIsScrolled(true);
+        setIsScrolled(true)
       } else {
-        setIsScrolled(false);
+        setIsScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <nav className={`navbar ${themeMode} ${isScrolled ? 'scrolled' : ''}`}>
@@ -43,7 +43,7 @@ const Navbar = () => {
         </button>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

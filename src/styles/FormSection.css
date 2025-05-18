@@ -1,0 +1,98 @@
+  .form-section {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background  : url("../../public/images/07-form-image.webp") no-repeat center center/cover;
+    min-height:fit-content;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    min-height: 80vh;
+    margin: 20px 0px ;
+    padding: 20px 0px;
+  }
+  
+  .form-container {
+    background: rgba(0, 0, 0, 0.512);
+    padding: 1% 5%;
+    margin: auto;
+    border-radius: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    max-width: 60%;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  
+  p {
+    margin: 22px auto;
+    font-size: 1.5rem;
+    max-width: 80ch;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  label {
+    font-size: 16px;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(11, 11, 11);
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: none;
+  }
+  
+  
+  small {
+    font-size: 14px;
+    text-align: start;
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .submit-btn {
+    width: 25%;
+    padding: 10px;
+    background: linear-gradient(to right, #4a90e2, #e94e77);
+    color: white;
+    float: left;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    opacity: 0.8;
+  }
+  

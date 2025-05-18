@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../../data/data.json'
+import data from '../../data/heroSection.json'
 import '../styles/HeroSection.css'
 
 const HeroSection = () => {
@@ -10,7 +10,7 @@ const HeroSection = () => {
         <h1>
           <span className='gradient-text'>{data.titlePart1}</span> {data.titlePart2}
         </h1>
-        {/* <p>{data.description}</p> */}
+        <p>{data.description}</p>
         <button className='cta-button'>{data.buttonText} &rarr;</button>
       </div>
     </section>
